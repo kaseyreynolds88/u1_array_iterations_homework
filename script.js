@@ -256,16 +256,33 @@ const inventors = [
 // - Use the Array.prototype.every() method to verify if every individual in the array is at least 19 years old.
 // - Store the result (true or false) in the variable 'isEveryone19OrOlder'.
 
-let isEveryone19OrOlder = null
+// let isEveryone19OrOlder = null
+
+// // Enter your solution code here:
+
+
+// isEveryone19OrOlder = devs.every((person) => person.year <= 2005)
+
+
+
+// // Check your return value:
+// console.log('Exercise 7 My Result: ', isEveryone19OrOlder)
+// console.log('Exercise 7 Correct Result: ', false)
+
+// Array.prototype.find()
+
+// 8. Use Array.prototype.find() to identify and retrieve the comment object with a specific ID 823423 from an array of comment objects.
+
+// - Assign the found comment object to the variable 'commentById'.
+
+
+let commentById = {}
 
 // Enter your solution code here:
 
-
-isEveryone19OrOlder = devs.every((person) => person.year <= 2005)
-
+commentById = comments.find(comment => comment.id == "823423")
 
 
 // Check your return value:
-console.log('Exercise 7 My Result: ', isEveryone19OrOlder)
-console.log('Exercise 7 Correct Result: ', false)
-
+console.log('Exercise 8 My Result: ', commentById)
+console.log('Exercise 8 Correct Result: ', { text: 'Super good', id: 823423 })
